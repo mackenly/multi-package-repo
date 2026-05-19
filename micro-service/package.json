@@ -1,0 +1,15 @@
+{
+  "name": "@projectname/micro-service",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npm run build && node dist/index.js",
+    "build": "tsc -b tsconfig.json"
+  },
+  "dependencies": {
+    "@projectname/app-types": "file:../packages/app-types",
+    "@projectname/auth": "file:../packages/auth",
+    "@projectname/utils": "file:../packages/utils"
+  }
+}

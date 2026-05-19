@@ -1,0 +1,15 @@
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+
+  micro-service:
+    build:
+      context: .
+      dockerfile: micro-service/Dockerfile
